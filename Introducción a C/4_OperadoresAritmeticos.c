@@ -21,6 +21,7 @@ int main()
     //que sea capaz de sumar, restar, multiplicar y divir
     //numeros enteros
     int num1, num2, result;
+    float num3, num4, result2;
     //Esto es equivalente a
     //int num1;
     //int num2;
@@ -44,9 +45,22 @@ int main()
     printf("\n El resultado de la multiplicación es: %d \n", result);
 
     //Vamos ahora a realizar la operación de división
-    result = num1 / num2;
-    printf("\n El resultado de la división es: %d \n", result);
+    num3 = num1;
+    num4 = num2;
+    result2 = num3 / num4;
+    printf("\n El resultado de la división es: %.1f \n", result2);
 
+    //Vamos ahora a realizar la operación de división
+    //otra vez
+
+    printf("\n El resultado de la división2 es: %.1f \n", ((float)num1 / num2));
+    // (float) num1 es un proceso de conversión de tipo de dato
+    // de entero a flotante
+    //Esto se conoce en programación como type casting
+
+    //Vamos ahora a realizar la operación de división
+    result = num1 % num2;
+    printf("\n El residuo de la división es: %d \n", result);
 
 
 
